@@ -22,7 +22,7 @@ local set_extmark = function(bufnr, row, col, hl, hl_empty)
         inlayhint_namespace,
         { row, col },
         { row, -1 },
-        { details = true, hl_name = false, type = "virt_text" }
+        { details = true }
     )
 
     vim.api.nvim_buf_clear_namespace(bufnr, inlayhint_namespace, row, row + 1)
